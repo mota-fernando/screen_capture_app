@@ -46,6 +46,12 @@ Este programa captura a tela em intervalos definidos, salva as imagens em um dir
 
    Isso deve retornar a versão do Tesseract, como `tesseract v5.5.0.20241111`.
 
+4. **Instale as bibliotecas**
+   ```bash
+   dotnet add package Tesseract
+   dotnet add package System.Drawing.Common
+   ```
+
 ### Linux (Ubuntu):
 
 1. **Instalar o Tesseract**:
@@ -77,12 +83,6 @@ Este programa captura a tela em intervalos definidos, salva as imagens em um dir
 
    ```bash
    tesseract --version
-   ```
-
-3. **Instale as bibliotecas**
-   ```bash
-   dotnet add package Tesseract
-   dotnet add package System.Drawing.Common
    ```
 ## Como Usar
 

@@ -1,0 +1,68 @@
+# Ignorar pastas de build e dependências
+[Bb]in/
+[Oo]bj/
+[Tt]est[Rr]esults/
+[Tt]ests/[Bb]in/
+[Tt]ests/[Oo]bj/
+*.user
+*.suo
+*.cache
+*.ilk
+*.pdb
+*.log
+*.nupkg
+*.vs/
+.vs/
+*.sln.iml
+*.csproj.user
+*.DotSettings
+
+# Ignorar arquivos de configuração local
+appsettings.json
+appsettings.*.json
+
+# Ignorar pastas de pacotes NuGet
+packages/
+[Nn]u[Gg]et.[Ll]ocal/
+
+# Ignorar arquivos de saída
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rtifacts/
+
+# Ignorar pastas de captura de imagens
+captura_crashgame/
+
+# Ignorar arquivos de treinamento (TRS)
+*.trs
+
+# Ignorar arquivos de cache do Visual Studio
+.vs/
+.vscode/
+
+# Ignorar arquivos de usuário do Visual Studio
+*.user
+*.suo
+
+# Ignorar arquivos de log
+*.log
+*.log.*
+
+# Ignorar arquivos de backup
+*.bak
+*.tmp
+*.temp
+
+# Ignorar arquivos de banco de dados local
+*.mdf
+*.ldf
+
+# Ignorar arquivos de configuração local
+*.local
+*.local.*
+
+# Ignorar arquivos de ambiente
+.env
+.env.local

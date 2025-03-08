@@ -1,20 +1,23 @@
 using System;
 using System.Windows.Forms;
-namespace ScreenCaptureApp;
 
-static class Program
+namespace ScreenCaptureApp
 {
-    /// <summary>
-    ///  The main entry point for the application.
-    /// </summary>
-    [STAThread]
-    static void Main()
+    static class Program
     {
-        // To customize application configuration such as set high DPI settings or default font,
-        // see https://aka.ms/applicationconfiguration.
-        //ApplicationConfiguration..EnableVisualStyles();
-        //ApplicationConfiguration.SetCompatibleTextRenderingDefault(false);
-        ApplicationConfiguration.Initialize();
-        Application.Run(new Form1());
-    }    
+        [STAThread]
+        static void Main()
+        {
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Form1());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao iniciar a aplicação: {ex.Message}");
+            }
+        }
+    }
 }
